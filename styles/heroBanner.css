@@ -1,0 +1,31 @@
+.hero-banner {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.title {
+    font-size: clamp(2.3rem, 13vw, 10rem);
+    white-space: nowrap;
+}
+
+.sub-title {
+    font-size: clamp(0.5rem, 4vw, 2rem);
+    white-space: nowrap;
+}
+
+.default-position-translate {
+    transform: translate3d(0, 120%, 0);
+}
+
+.translate-animation {
+    animation: bottom-translate 1.2s ease forwards;
+}
+
+@keyframes bottom-translate {
+    0% {
+        transform: translate3d(0, 120%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}

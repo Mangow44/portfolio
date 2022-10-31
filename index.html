@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link href="./dist/output.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./styles/global.css" />
+        <link rel="stylesheet" href="./styles/heroBanner.css" />
+        <link rel="stylesheet" href="./styles/rocket.css" />
+        <link rel="stylesheet" href="./styles/planets.css" />
+
+        <script src="./scripts/heroBanner.js" defer></script>
+        <script src="./scripts/planets.js" defer></script>
+        <script src="./scripts/scrollEffects.js" defer></script>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- HERO BANNER -->
+        <div class="hero-banner flex flex-col justify-center items-center w-auto h-screen bg-green-300">
+            <span class="block overflow-hidden">
+                <h1 class="title default-position-translate translate-animation">Thomas Clouet</h1>
+            </span>
+
+            <span class="block overflow-hidden">
+                <p class="sub-title default-position-translate translate-animation" style="animation-delay: 0.4s">
+                    Étudiant en 5ème année à Polytech Nantes
+                </p>
+            </span>
+        </div>
+        <!-- HERO BANNER -->
+
+        <!-- ROCKET -->
+        <img class="rocket" src="./ressources/rocket.png" alt="rocket" />
+        <!-- ROCKET -->
+
+        <!-- PLANET 1 -->
+        <div class="planet-container w-full h-screen bg-green-400">
+            <span class="planet-1 default-scale scale-animation">
+                <p class="max-w-full pb-[1rem] text-white whitespace-nowrap text-ellipsis">
+                    A la recherche d'un stage zebi
+                </p>
+            </span>
+        </div>
+        <!-- PLANET 1 -->
+
+        <!-- PLANET 2 -->
+        <div class="planet-container flex justify-center items-start w-full h-[400%] bg-slate-400">
+            <span class="planet-2">
+                <div class="bloc-planet-2 planet-2-bloc-1">expérience professionnelle 1</div>
+                <div class="bloc-planet-2 planet-2-bloc-2">expérience professionnelle 2</div>
+                <div class="bloc-planet-2 planet-2-bloc-3">expérience professionnelle 3</div>
+                <div class="bloc-planet-2 planet-2-bloc-4">expérience professionnelle 4</div>
+            </span>
+        </div>
+        <!-- PLANET 2 -->
+    </body>
+</html>

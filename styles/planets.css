@@ -1,0 +1,64 @@
+.planet-container {
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+.planet-1 {
+    z-index: 9;
+    position: fixed;
+    top: -25vw;
+    right: -25vw;
+    width: 50vw;
+    height: 50vw;
+    border-radius: 90%;
+
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default-scale {
+    transform: scale(0);
+}
+
+.scale-animation {
+    animation: scale 1s ease forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.planet-2 {
+    z-index: 12;
+    flex-shrink: 0;
+    height: 100vh;
+    width: 100vh;
+    border-radius: 90%;
+
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed-planet-2 {
+    position: fixed;
+    top: 0;
+}
+
+.bloc-planet-2 {
+    position: absolute;
+    background-color: white;
+    opacity: 0;
+}
